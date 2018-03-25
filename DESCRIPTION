@@ -1,0 +1,10 @@
+Package: mathart
+Title: Tools for creating mathematical art
+Version: 0.0.0.9000
+Authors@R: person("Marcus", "Volz", email = "marcus.volz@outlook.com", role = c("aut", "cre"))
+Description: Tools for creating mathematical art
+Depends: R (>= 3.4.4)
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
