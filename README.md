@@ -97,3 +97,25 @@ ggsave("butterfly01.png", p, width = 20, height = 20, units = "cm", dpi = 720)
 ```
 
 ![plants](https://github.com/marcusvolz/mathart/blob/master/plots/butterfly01.png "Butterflies")
+
+### Create critters
+
+```R
+df1 <- ant() %>% mutate(id = 1)
+df2 <- spider() %>% mutate(id = 2)
+df3 <- millipede() %>% mutate(id = 3)
+
+df <- rbind(df1 %>% mutate(x = (x - min(df1$x))*0.9  + 0.2, y = (y - min(df1$y))*0.9 + 1, r = r * 0.75),
+            df2 %>% mutate(x = (x - min(df2$x))*1.5  + 2.4, y = (y - min(df2$y))*1.5 + 2.2),
+            df3 %>% mutate(x = (x - min(df3$x))*1.75 + 2.4, y = (y - min(df3$y))*1.75))
+
+p <- ggplot() +
+  geom_circle(aes(x0 = x, y0 = y, r = r), df, size = 0.03, alpha = 0.03, n = 100) +
+  geom_path(aes(x, y, group = id), df, size = 0.5, alpha = 0.5) +
+  coord_equal() +
+  theme_blankcanvas(margin_cm = 1)
+
+ggsave("critters01.png", p, width = 40, height = 40, units = "cm", dpi = 300)
+```
+
+![plants](https://github.com/marcusvolz/mathart/blob/master/plots/critters01.png "Critters")
