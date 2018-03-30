@@ -98,6 +98,25 @@ ggsave("butterfly01.png", p, width = 20, height = 20, units = "cm", dpi = 720)
 
 ![plants](https://github.com/marcusvolz/mathart/blob/master/plots/butterfly01.png "Butterflies")
 
+### Create hearts
+
+```R
+df <- rbind(heart1() %>% mutate(id = 1),
+            heart2() %>% mutate(id = 2),
+            heart3() %>% mutate(id = 3),
+            heart4() %>% mutate(id = 4))
+
+p <- ggplot() +
+  geom_path(aes(x, y), df, size = 0.25, lineend = "round") +
+  facet_wrap(~id, nrow = 2, scales = "free") +
+  theme_blankcanvas(margin_cm = 1)
+
+ggsave("hearts01.png", p, width = 40, height = 40, units = "cm", dpi = 300)
+
+```
+
+![plants](https://github.com/marcusvolz/mathart/blob/master/plots/hearts01.png "Hearts")
+
 ### Create critters
 
 ```R
