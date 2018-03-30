@@ -1,6 +1,6 @@
 # Math art
 
-Create mathemtical art with R
+Create mathematical art with R
 
 ## How to use
 
@@ -33,7 +33,7 @@ p <- ggplot() +
   scale_alpha_continuous(range = c(0.03, 0.06)) +
   theme_blankcanvas(margin_cm = 1)
 
-ggsave("../mathart/plots/birds01.png", p, width = 20, height = 20, units = "cm", dpi = 300)
+ggsave("birds01.png", p, width = 20, height = 20, units = "cm", dpi = 300)
 ```
 
 ![birds](https://github.com/marcusvolz/mathart/blob/master/plots/birds01.png "Parametric birds")
