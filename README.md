@@ -78,3 +78,22 @@ ggsave("mollusc01.png", width = 20, height = 20, units = "cm")
 ```
 
 ![plants](https://github.com/marcusvolz/mathart/blob/master/plots/mollusc01.png "Mollusc shells")
+
+### Create butterflies
+
+```R
+df <- rbind(butterfly1() %>% mutate(id = 1),
+            butterfly2() %>% mutate(id = 2),
+            butterfly3() %>% mutate(id = 3))
+
+p <- ggplot() +
+  geom_point(aes(x, y, alpha = r), df, size = 0.03) +
+  coord_equal() +
+  facet_wrap(~id, nrow = 2) +
+  scale_alpha_continuous(range = c(0.03, 0.16)) +
+  theme_blankcanvas(margin_cm = 0)
+
+ggsave("butterfly01.png", p, width = 20, height = 20, units = "cm", dpi = 720)
+```
+
+![plants](https://github.com/marcusvolz/mathart/blob/master/plots/butterfly01.png "Butterflies")
