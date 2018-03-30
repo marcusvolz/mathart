@@ -2,7 +2,7 @@
 % Please edit documentation in R/branch.R
 \name{branch}
 \alias{branch}
-\title{Branch}
+\title{Generate branch data}
 \usage{
 branch(n = 3000)
 }
@@ -10,10 +10,9 @@ branch(n = 3000)
 \item{n}{The number of points to generate}
 }
 \description{
-Generates 'Branch' data from parametric formulas and stores it in a data frame
+Generates data for plotting a branch and stores it in a data frame with (x, y) coordinates and radius r
 }
 \examples{
 branch()
 }
-\keyword{leaves}
-\keyword{plant}
+\keyword{branch}

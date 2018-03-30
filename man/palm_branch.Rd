@@ -2,7 +2,7 @@
 % Please edit documentation in R/palm_branch.R
 \name{palm_branch}
 \alias{palm_branch}
-\title{Olive branch}
+\title{Generate palm_branch data}
 \usage{
 palm_branch(n = 12000)
 }
@@ -10,7 +10,7 @@ palm_branch(n = 12000)
 \item{n}{The number of points to generate}
 }
 \description{
-Generates 'Palm branch' data from parametric formulas and stores it in a data frame
+Generates data for plotting a palm branch and stores it in a data frame with (x, y) coordinates and radius r
 }
 \examples{
 palm_branch()

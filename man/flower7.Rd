@@ -2,7 +2,7 @@
 % Please edit documentation in R/flower7.R
 \name{flower7}
 \alias{flower7}
-\title{Flower 7}
+\title{Generate flower7 data}
 \usage{
 flower7(n = 9000)
 }
@@ -10,7 +10,7 @@ flower7(n = 9000)
 \item{n}{The number of points to generate}
 }
 \description{
-Generates 'Flower 7' data from parametric formulas and stores it in a data frame (https://www.huffingtonpost.com/entry/flowers_b_9817126.html)
+Generates data for plotting a flower and stores it in a data frame with (x, y) coordinates and radius r
 }
 \examples{
 flower7()

@@ -2,15 +2,15 @@
 % Please edit documentation in R/millipede.R
 \name{millipede}
 \alias{millipede}
-\title{Millipede}
+\title{Generate millipede data}
 \usage{
-millipede(dt = 0.001)
+millipede(n = 3000)
 }
 \arguments{
-\item{dt}{Time step}
+\item{n}{The number of points to generate}
 }
 \description{
-Generates 'Millipede' data from parametric formulas and stores it in a data frame
+Generates data for plotting a millipede and stores it in a data frame with (x, y) coordinates and radius r
 }
 \examples{
 millipede()

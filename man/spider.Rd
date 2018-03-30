@@ -2,15 +2,15 @@
 % Please edit documentation in R/spider.R
 \name{spider}
 \alias{spider}
-\title{Spider}
+\title{Generate spider data}
 \usage{
-spider(dt = 0.001)
+spider(n = 3000)
 }
 \arguments{
-\item{dt}{Time step}
+\item{n}{The number of points to generate}
 }
 \description{
-Generates 'Spider' data from parametric formulas and stores it in a data frame
+Generates data for plotting a spider and stores it in a data frame with (x, y) coordinates and radius r
 }
 \examples{
 spider()

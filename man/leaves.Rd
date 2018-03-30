@@ -2,7 +2,7 @@
 % Please edit documentation in R/leaves.R
 \name{leaves}
 \alias{leaves}
-\title{Leaves}
+\title{Generate leaves data}
 \usage{
 leaves(n = 30000)
 }
@@ -10,7 +10,7 @@ leaves(n = 30000)
 \item{n}{The number of points to generate}
 }
 \description{
-Generates 'Leaves' data from parametric formulas and stores it in a data frame
+Generates data for plotting leaves and stores it in a data frame with (x, y) coordinates and radius r
 }
 \examples{
 leaves()

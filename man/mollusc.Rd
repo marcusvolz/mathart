@@ -2,20 +2,54 @@
 % Please edit documentation in R/mollusc.R
 \name{mollusc}
 \alias{mollusc}
-\title{Mollusc}
+\title{Generate mollusc data}
 \usage{
 mollusc(alpha = 80, beta = 40, phi = 55, mu = 10, Omega = 30,
   s_min = -270, s_max = 62, A = 25, a = 12, b = 16, P = 2,
-  W_1 = 1, W_2 = 1, N = 1, L = 0, D = 1, theta_start = -100 * 0,
+  W_1 = 1, W_2 = 1, N = 1, L = 0, D = 1, theta_start = 0,
   theta_end = 10 * pi)
 }
 \arguments{
-\item{dt}{Time step}
+\item{alpha}{A parameter}
+
+\item{beta}{A parameter}
+
+\item{phi}{A parameter}
+
+\item{mu}{A parameter}
+
+\item{Omega}{A parameter}
+
+\item{s_min}{A parameter}
+
+\item{s_max}{A parameter}
+
+\item{A}{A parameter}
+
+\item{a}{A parameter}
+
+\item{b}{A parameter}
+
+\item{P}{A parameter}
+
+\item{W_1}{A parameter}
+
+\item{W_2}{A parameter}
+
+\item{N}{A parameter}
+
+\item{L}{A parameter}
+
+\item{D}{A parameter}
+
+\item{theta_start}{A parameter}
+
+\item{theta_end}{A parameter}
 }
 \description{
-Generates 'Mollusc' data from parametric formulas and stores it in a data frame
+Generates data for plotting mollusc shells and stores it in a data frame with (x, y, z) coordinates
 }
 \examples{
-ant()
+mollusc()
 }
-\keyword{ant}
+\keyword{mollusc}

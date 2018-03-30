@@ -2,7 +2,7 @@
 % Please edit documentation in R/pi.R
 \name{pi1}
 \alias{pi1}
-\title{Pi}
+\title{Generate pi data}
 \usage{
 pi1(n = 2000)
 }
@@ -10,7 +10,7 @@ pi1(n = 2000)
 \item{n}{The number of points to generate}
 }
 \description{
-Generates 'Pi' data from parametric formulas and stores it in a data frame
+Generates data for plotting the pi symbol and stores it in a data frame with (x, y) coordinates and radius r
 }
 \examples{
 pi1()

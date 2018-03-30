@@ -2,7 +2,7 @@
 % Please edit documentation in R/olive_branch.R
 \name{olive_branch}
 \alias{olive_branch}
-\title{Olive branch}
+\title{Generate olive_branch data}
 \usage{
 olive_branch(n = 4000)
 }
@@ -10,7 +10,7 @@ olive_branch(n = 4000)
 \item{n}{The number of points to generate}
 }
 \description{
-Generates 'Olive branch' data from parametric formulas and stores it in a data frame
+Generates data for plotting an olive branch and stores it in a data frame with (x, y) coordinates and radius r
 }
 \examples{
 olive_branch()

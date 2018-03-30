@@ -2,7 +2,7 @@
 % Please edit documentation in R/butterfly1.R
 \name{butterfly1}
 \alias{butterfly1}
-\title{Butterfly 1}
+\title{Generate butterfly1 data}
 \usage{
 butterfly1(n = 40000)
 }
@@ -10,7 +10,7 @@ butterfly1(n = 40000)
 \item{n}{The number of points to generate}
 }
 \description{
-Generates 'Butterfly 1' data from parametric formulas and stores it in a data frame
+Generates data for plotting a butterfly and stores it in a data frame with (x, y) coordinates and radius r
 }
 \examples{
 butterfly1()
