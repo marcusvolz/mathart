@@ -2,15 +2,15 @@
 % Please edit documentation in R/ant.R
 \name{ant}
 \alias{ant}
-\title{Ant}
+\title{Generate ant data}
 \usage{
-ant(dt = 0.001)
+ant(n = 3000)
 }
 \arguments{
-\item{dt}{Time step}
+\item{n}{The number of points to generate}
 }
 \description{
-Generates 'Ant' data from parametric formulas and stores it in a data frame
+Generates data for plotting an ant and stores it in a data frame with (x, y) coordinates and radius r
 }
 \examples{
 ant()
