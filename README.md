@@ -7,7 +7,7 @@ Create mathematical art with R
 ### Install the packages
 
 ```R
-install.packages(c("devtools", "mapproj", "tidyverse"))
+install.packages(c("devtools", "mapproj", "tidyverse", "ggforce"))
 devtools::install_github("marcusvolz/mathart")
 devtools::install_github("marcusvolz/ggart")
 ```
@@ -17,10 +17,11 @@ devtools::install_github("marcusvolz/ggart")
 ```R
 library(mathart)
 library(ggart)
+library(ggforce)
 library(tidyverse)
 ```
 
-### Create birds plot
+### Create birds
 
 ```R
 df <- rbind(parrot() %>% mutate(id = 1),
@@ -37,3 +38,20 @@ ggsave("birds01.png", p, width = 20, height = 20, units = "cm", dpi = 300)
 ```
 
 ![birds](https://github.com/marcusvolz/mathart/blob/master/plots/birds01.png "Parametric birds")
+### Create plants
+
+```R
+df <- rbind(olive_branch() %>% mutate(id = 1),
+            palm_branch() %>% mutate(id = 2),
+            branch() %>% mutate(id = 3))
+
+p <- ggplot() +
+  geom_circle(aes(x0 = x, y0 = y, r = r), df, size = 0.03, alpha = 0.1) +
+  coord_equal() +
+  facet_wrap(~id, nrow = 3) +
+  theme_blankcanvas(margin_cm = 1)
+
+ggsave("plants01.png", p, width = 20, height = 20, units = "cm")
+```
+
+![plants](https://github.com/marcusvolz/mathart/blob/master/plots/plants01.png "Parametric plants")
