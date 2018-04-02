@@ -138,3 +138,10 @@ ggsave("critters01.png", p, width = 40, height = 40, units = "cm", dpi = 300)
 ```
 
 ![plants](https://github.com/marcusvolz/mathart/blob/master/plots/critters01.png "Critters")
+### Create harmonographs
+
+```R
+
+```
+
+![plants](https://github.com/marcusvolz/mathart/blob/master/plots/harmonograph01.png "Harmonograph")
