@@ -169,7 +169,24 @@ p <- ggplot() +
   facet_wrap(~id, nrow = 2) +
   theme_blankcanvas(margin_cm = 0)
 
-ggsave("../mathart/plots/harmonograph01.png", p, width = 20, height = 20, units = "cm")
+ggsave("harmonograph01.png", p, width = 20, height = 20, units = "cm")
+```
+
+![plants](https://github.com/marcusvolz/mathart/blob/master/plots/harmonograph01.png "Harmonograph")
+### Create Lissajous curves
+
+```R
+set.seed(1)
+
+df <- 1:100 %>% map_df(~lissajous(a = runif(1, 0, 10), A = runif(1, 0, 1)), .id = "id")
+
+p <- ggplot() +
+  geom_path(aes(x, y), df, size = 0.25, lineend = "round") +
+  facet_wrap(~id, nrow = 10) +
+  coord_equal() +
+  theme_blankcanvas(margin_cm = 1)
+
+ggsave("lissajous001.png", p, width = 20, height = 20, units = "cm", dpi = 300)
 ```
 
 ![plants](https://github.com/marcusvolz/mathart/blob/master/plots/harmonograph01.png "Harmonograph")
