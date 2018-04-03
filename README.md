@@ -189,4 +189,4 @@ p <- ggplot() +
 ggsave("lissajous001.png", p, width = 20, height = 20, units = "cm", dpi = 300)
 ```
 
-![plants](https://github.com/marcusvolz/mathart/blob/master/plots/harmonograph01.png "Harmonograph")
+![plants](https://github.com/marcusvolz/mathart/blob/master/plots/lissajous01.png "Lissajous")
