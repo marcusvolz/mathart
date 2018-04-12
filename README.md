@@ -2,6 +2,8 @@
 
 Create mathematical art with R
 
+Most of the parametric equations underlying these plots were discovered by the mathematical artist Hamid Naderi Yeganeh.
+
 ## How to use
 
 ### Install the packages
