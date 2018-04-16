@@ -10,44 +10,44 @@ mollusc(alpha = 80, beta = 40, phi = 55, mu = 10, Omega = 30,
   theta_end = 10 * pi)
 }
 \arguments{
-\item{alpha}{A parameter}
+\item{alpha}{Equiangular angle of spiral}
 
-\item{beta}{A parameter}
+\item{beta}{Angle between z-axis and line from aperture local origin to xyz origin}
 
-\item{phi}{A parameter}
+\item{phi}{Tilt of ellipse major axis from horizontal plane}
 
-\item{mu}{A parameter}
+\item{mu}{Amount of "leaning over" of aperture}
 
-\item{Omega}{A parameter}
+\item{Omega}{Amount of azimuthal rotation of aperture}
 
-\item{s_min}{A parameter}
+\item{s_min}{Angle at which aperture-generating curve begins}
 
-\item{s_max}{A parameter}
+\item{s_max}{Angle at which aperture-generating curve ends}
 
-\item{A}{A parameter}
+\item{A}{Distance from main origin to local origin of aperture at theta=0}
 
-\item{a}{A parameter}
+\item{a}{Major radius of ellipse at theta=0}
 
-\item{b}{A parameter}
+\item{b}{Minor radius of ellipse at theta=0}
 
-\item{P}{A parameter}
+\item{P}{Position of nodule in terms of the angle, s}
 
-\item{W_1}{A parameter}
+\item{W_1}{Width of nodule in s-direction}
 
-\item{W_2}{A parameter}
+\item{W_2}{Width of nodule in theta-direction}
 
-\item{N}{A parameter}
+\item{N}{Number of nodules per whorl}
 
-\item{L}{A parameter}
+\item{L}{Height of nodule at theta=0}
 
-\item{D}{A parameter}
+\item{D}{Sense of coiling; 1=dextral, -1=sinistral}
 
-\item{theta_start}{A parameter}
+\item{theta_start}{Required for shells such as Dentalium or Diodora, which grow at one end while dissolving at the other. In all other cases set to -Inf}
 
-\item{theta_end}{A parameter}
+\item{theta_end}{Not important for self-similar shells, except very small or large values can cause computational problems}
 }
 \description{
-Generates data for plotting mollusc shells and stores it in a data frame with (x, y, z) coordinates
+Generates data for plotting mollusc shells and stores it in a data frame with (x, y, z) coordinates. The shell model is described in the paper "Models for mollusc shell shape" by M.B. Cortie (1989).
 }
 \examples{
 mollusc()

@@ -1,24 +1,24 @@
 #' Generate mollusc data
 #'
-#' Generates data for plotting mollusc shells and stores it in a data frame with (x, y, z) coordinates
-#' @param alpha A parameter
-#' @param beta A parameter
-#' @param phi A parameter
-#' @param mu A parameter
-#' @param Omega A parameter
-#' @param s_min A parameter
-#' @param s_max A parameter
-#' @param A A parameter
-#' @param a A parameter
-#' @param b A parameter
-#' @param P A parameter
-#' @param W_1 A parameter
-#' @param W_2 A parameter
-#' @param N A parameter
-#' @param L A parameter
-#' @param D A parameter
-#' @param theta_start A parameter
-#' @param theta_end A parameter
+#' Generates data for plotting mollusc shells and stores it in a data frame with (x, y, z) coordinates. The shell model is described in the paper "Models for mollusc shell shape" by M.B. Cortie (1989).
+#' @param alpha Equiangular angle of spiral
+#' @param beta Angle between z-axis and line from aperture local origin to xyz origin
+#' @param phi Tilt of ellipse major axis from horizontal plane
+#' @param mu Amount of "leaning over" of aperture
+#' @param Omega Amount of azimuthal rotation of aperture
+#' @param s_min Angle at which aperture-generating curve begins
+#' @param s_max Angle at which aperture-generating curve ends
+#' @param A Distance from main origin to local origin of aperture at theta=0
+#' @param a Major radius of ellipse at theta=0
+#' @param b Minor radius of ellipse at theta=0
+#' @param P Position of nodule in terms of the angle, s
+#' @param W_1 Width of nodule in s-direction
+#' @param W_2 Width of nodule in theta-direction
+#' @param N Number of nodules per whorl
+#' @param L Height of nodule at theta=0
+#' @param D Sense of coiling; 1=dextral, -1=sinistral
+#' @param theta_start Required for shells such as Dentalium or Diodora, which grow at one end while dissolving at the other. In all other cases set to -Inf
+#' @param theta_end Not important for self-similar shells, except very small or large values can cause computational problems
 #' @keywords mollusc
 #' @export
 #' @examples
