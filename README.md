@@ -196,16 +196,18 @@ ggsave("lissajous001.png", p, width = 20, height = 20, units = "cm", dpi = 300)
 
 ```R
 set.seed(1)
-points <- data.frame(x = runif(10000, 0, 10000), y = runif(10000, 0, 10000))
-df <- k_nearest_neighbour_graph(points, 8)
+
+df <- heart3() %>%
+  sample_n(10000) %>%
+  k_nearest_neighbour_graph(40)
 
 p <- ggplot() +
-  geom_segment(aes(x, y, xend = xend, yend = yend), df) +
+  geom_segment(aes(x, y, xend = xend, yend = yend), df, size = 0.03) +
   coord_equal() +
-  theme_void()
+  theme_blankcanvas(margin_cm = 0)
 
-ggsave("nearest_neighbour_graph.png", p, width = 20, height = 20, units = "in")
+ggsave("nng_heart3.png", p, width = 25, height = 25, units = "cm")
 
 ```
 
-![nearest_neighbour_graph](https://github.com/marcusvolz/mathart/blob/master/plots/nearest_neighbour_graph.png "nearest_neighbour_graph")
+![nng_heart3](https://github.com/marcusvolz/mathart/blob/master/plots/nng_heart3.png "nng_heart3")
