@@ -4,12 +4,14 @@
 \alias{mollusc}
 \title{Generate mollusc data}
 \usage{
-mollusc(alpha = 80, beta = 40, phi = 55, mu = 10, Omega = 30,
-  s_min = -270, s_max = 62, A = 25, a = 12, b = 16, P = 2,
-  W_1 = 1, W_2 = 1, N = 1, L = 0, D = 1, theta_start = 0,
+mollusc(n = 1000, alpha = 80, beta = 40, phi = 55, mu = 10,
+  Omega = 30, s_min = -270, s_max = 62, A = 25, a = 12, b = 16,
+  P = 2, W_1 = 1, W_2 = 1, N = 1, L = 0, D = 1, theta_start = 0,
   theta_end = 10 * pi)
 }
 \arguments{
+\item{n}{Number of points to generate}
+
 \item{alpha}{Equiangular angle of spiral}
 
 \item{beta}{Angle between z-axis and line from aperture local origin to xyz origin}

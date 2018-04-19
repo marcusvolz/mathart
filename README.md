@@ -192,3 +192,20 @@ ggsave("lissajous001.png", p, width = 20, height = 20, units = "cm", dpi = 300)
 ```
 
 ![plants](https://github.com/marcusvolz/mathart/blob/master/plots/lissajous01.png "Lissajous")
+### k-nearest neighbour graph
+
+```R
+set.seed(1)
+points <- data.frame(x = runif(10000, 0, 10000), y = runif(10000, 0, 10000))
+df <- k_nearest_neighbour_graph(points, 8)
+
+p <- ggplot() +
+  geom_segment(aes(x, y, xend = xend, yend = yend), df) +
+  coord_equal() +
+  theme_void()
+
+ggsave("nearest_neighbour_graph.png", p, width = 20, height = 20, units = "in")
+
+```
+
+![nearest_neighbour_graph](https://github.com/marcusvolz/mathart/blob/master/plots/nearest_neighbour_graph.png "nearest_neighbour_graph")

@@ -1,6 +1,7 @@
 #' Generate mollusc data
 #'
 #' Generates data for plotting mollusc shells and stores it in a data frame with (x, y, z) coordinates. The shell model is described in the paper "Models for mollusc shell shape" by M.B. Cortie (1989).
+#' @param n Number of points to generate
 #' @param alpha Equiangular angle of spiral
 #' @param beta Angle between z-axis and line from aperture local origin to xyz origin
 #' @param phi Tilt of ellipse major axis from horizontal plane
@@ -24,11 +25,11 @@
 #' @examples
 #' mollusc()
 
-mollusc <- function(alpha = 80, beta = 40, phi = 55, mu = 10, Omega = 30, s_min = -270, s_max = 62,
+mollusc <- function(n = 1000, alpha = 80, beta = 40, phi = 55, mu = 10, Omega = 30, s_min = -270, s_max = 62,
                 A = 25, a = 12, b = 16, P = 2, W_1 = 1, W_2 = 1, N = 1, L = 0, D = 1,
                 theta_start = 0, theta_end = 10*pi) {
-  data.frame(expand.grid(seq(s_min, s_max, 1),
-                         seq(theta_start, theta_end, (theta_end-theta_start)/1000)) %>%
+  data.frame(expand.grid(seq(s_min, s_max, (s_max-s_min)/10000),
+                         seq(theta_start, theta_end, (theta_end-theta_start)/n)) %>%
                dplyr::rename(s = Var1, theta = Var2)) %>%
     dplyr::mutate(
       f_theta = ifelse(N == 0, Inf, 360/N*(theta*N/360-round(theta*N/360, 0))),
