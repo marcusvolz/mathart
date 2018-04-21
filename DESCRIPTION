@@ -8,6 +8,7 @@ Imports:
     dplyr,
     ggplot2,
     purrr,
+    Rcpp,
     tidyr,
     tweenr
 License: What license is it under?
