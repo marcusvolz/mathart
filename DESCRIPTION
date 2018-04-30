@@ -5,6 +5,7 @@ Authors@R: person("Marcus", "Volz", email = "marcus.volz@outlook.com", role = c(
 Description: Create mathematical art with R
 Suggests: R (>= 3.4.3)
 Imports: 
+    deldir,
     dplyr,
     ggplot2,
     purrr,
