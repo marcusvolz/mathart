@@ -10,8 +10,8 @@
 #' concave_hull()
 
 concave_hull <- function(points, concavity = 1, length_threshold = 0) {
-  points <- as.matrix(points)
-  result <- concaveman(points, concavity, length_threshold) %>%
+  as.matrix(points) %>%
+    concaveman::concaveman(concavity, length_threshold) %>%
     as.data.frame() %>%
-    rename(x = V1, y = V2)
+    dplyr::rename(x = V1, y = V2)
 }
