@@ -2,7 +2,7 @@
 
 Create mathematical art with R
 
-Most of the parametric equations underlying these plots were discovered by the mathematical artist Hamid Naderi Yeganeh.
+Most of the parametric equations underlying these plots were discovered by the mathematical artist [Hamid Naderi Yeganeh](https://mathematics.culturalspot.org/home). Links to Hamid's equations can be found in the documentation.
 
 ## How to use
 
@@ -25,6 +25,8 @@ library(tidyverse)
 
 ### Create birds
 
+Refer to [Hamid's equations](https://www.huffingtonpost.com/entry/mathematical-birds_b_8876904.html)
+
 ```R
 df <- rbind(parrot() %>% mutate(id = 1),
             stork() %>% mutate(id = 2),
@@ -41,6 +43,8 @@ ggsave("birds01.png", p, width = 20, height = 20, units = "cm", dpi = 300)
 
 ![birds](https://github.com/marcusvolz/mathart/blob/master/plots/birds01.png "Birds")
 ### Create plants
+
+Refer to [Hamid's equations](https://www.huffingtonpost.com/entry/mathematical-plants_b_9010790.html)
 
 ```R
 df <- rbind(olive_branch() %>% mutate(id = 1),
@@ -83,6 +87,8 @@ ggsave("mollusc01.png", width = 20, height = 20, units = "cm")
 
 ### Create butterflies
 
+Refer to [Hamid's equations](https://www.huffingtonpost.com/entry/using-mathematical-formul_b_9313484.html)
+
 ```R
 df <- rbind(butterfly1() %>% mutate(id = 1),
             butterfly2() %>% mutate(id = 2),
@@ -102,6 +108,8 @@ ggsave("butterfly01.png", p, width = 20, height = 20, units = "cm", dpi = 720)
 
 ### Create hearts
 
+Refer to [Hamid's equations](https://www.huffingtonpost.com/entry/mathematical-formulas-for-the-symbol-of-love_b_8848264.html)
+
 ```R
 df <- rbind(heart1() %>% mutate(id = 1),
             heart2() %>% mutate(id = 2),
@@ -120,6 +128,8 @@ ggsave("hearts01.png", p, width = 40, height = 40, units = "cm", dpi = 300)
 ![plants](https://github.com/marcusvolz/mathart/blob/master/plots/hearts01.png "Hearts")
 
 ### Create critters
+
+Refer to [Hamid's equations](https://www.huffingtonpost.com/entry/ant-spider-and-millipede-_b_8583338.html)
 
 ```R
 df1 <- ant() %>% mutate(id = 1)

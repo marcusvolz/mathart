@@ -1,6 +1,11 @@
 #' Generate spider data
 #'
 #' Generates data for plotting a spider and stores it in a data frame with (x, y) coordinates and radius r
+#' 
+#' The equations were discovered by the mathematical artist \href{https://mathematics.culturalspot.org/home}{Hamid Naderi Yeganeh}. \cr
+#' 
+#' Hamid's equations can be found \href{https://www.huffingtonpost.com/entry/ant-spider-and-millipede-_b_8583338.html}{here}.
+#' 
 #' @param n The number of points to generate
 #' @keywords spider
 #' @export

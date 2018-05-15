@@ -12,6 +12,11 @@ heart3(n = 1e+06)
 \description{
 Generates data for plotting a heart and stores it in a data frame with (x, y) coordinates and radius r
 }
+\details{
+The equations were discovered by the mathematical artist \href{https://mathematics.culturalspot.org/home}{Hamid Naderi Yeganeh}. \cr
+
+Hamid's equations can be found \href{https://www.huffingtonpost.com/entry/mathematical-formulas-for-the-symbol-of-love_b_8848264.html}{here}.
+}
 \examples{
 heart3()
 }

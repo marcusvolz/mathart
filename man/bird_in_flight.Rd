@@ -12,6 +12,11 @@ bird_in_flight(n = 20000)
 \description{
 Generates data for plotting a bird in flight and stores it in a data frame with (x, y, xend, yend) coordinates
 }
+\details{
+The equations were discovered by the mathematical artist \href{https://mathematics.culturalspot.org/home}{Hamid Naderi Yeganeh}. \cr
+
+Hamid's equations can be found \href{https://www.huffingtonpost.com/entry/importing-things-from-the_b_8111912.html}{here}.
+}
 \examples{
 bird_in_flight()
 }

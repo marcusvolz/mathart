@@ -1,6 +1,11 @@
 #' Generate leaves data
 #'
 #' Generates data for plotting leaves and stores it in a data frame with (x, y) coordinates and radius r
+#' 
+#' The equations were discovered by the mathematical artist \href{https://mathematics.culturalspot.org/home}{Hamid Naderi Yeganeh}. \cr
+#' 
+#' Hamid's equations can be found \href{https://www.huffingtonpost.com/entry/mathematical-plants_b_9010790.html}{here}.
+#' 
 #' @param n The number of points to generate
 #' @keywords plant leaves
 #' @export

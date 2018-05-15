@@ -12,6 +12,11 @@ butterfly2(n = 40000)
 \description{
 Generates data for plotting a butterfly and stores it in a data frame with (x, y) coordinates and radius r
 }
+\details{
+The equations were discovered by the mathematical artist \href{https://mathematics.culturalspot.org/home}{Hamid Naderi Yeganeh}. \cr
+
+Hamid's equations can be found \href{https://www.huffingtonpost.com/entry/using-mathematical-formul_b_9313484.html}{here}.
+}
 \examples{
 butterfly2()
 }

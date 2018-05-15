@@ -12,6 +12,11 @@ leaves(n = 30000)
 \description{
 Generates data for plotting leaves and stores it in a data frame with (x, y) coordinates and radius r
 }
+\details{
+The equations were discovered by the mathematical artist \href{https://mathematics.culturalspot.org/home}{Hamid Naderi Yeganeh}. \cr
+
+Hamid's equations can be found \href{https://www.huffingtonpost.com/entry/mathematical-plants_b_9010790.html}{here}.
+}
 \examples{
 leaves()
 }

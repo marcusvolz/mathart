@@ -12,6 +12,11 @@ stork(n = 80000)
 \description{
 Generates data for plotting a stork and stores it in a data frame with (x, y) coordinates and radius r
 }
+\details{
+The equations were discovered by the mathematical artist \href{https://mathematics.culturalspot.org/home}{Hamid Naderi Yeganeh}. \cr
+
+Hamid's equations can be found \href{https://www.huffingtonpost.com/entry/mathematical-birds_b_8876904.html}{here}.
+}
 \examples{
 stork()
 }

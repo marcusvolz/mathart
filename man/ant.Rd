@@ -10,7 +10,12 @@ ant(n = 3000)
 \item{n}{The number of points to generate}
 }
 \description{
-Generates data for plotting an ant and stores it in a data frame with (x, y) coordinates and radius r
+Generates data for plotting an ant and stores it in a data frame with (x, y) coordinates and radius r. \cr
+}
+\details{
+The equations were discovered by the mathematical artist \href{https://mathematics.culturalspot.org/home}{Hamid Naderi Yeganeh}. \cr
+
+Hamid's equations can be found \href{https://www.huffingtonpost.com/entry/ant-spider-and-millipede-_b_8583338.html}{here}.
 }
 \examples{
 ant()

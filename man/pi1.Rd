@@ -12,6 +12,11 @@ pi1(n = 2000)
 \description{
 Generates data for plotting the pi symbol and stores it in a data frame with (x, y) coordinates and radius r
 }
+\details{
+The equations were discovered by the mathematical artist \href{https://mathematics.culturalspot.org/home}{Hamid Naderi Yeganeh}. \cr
+
+Hamid's equations can be found \href{https://www.huffingtonpost.com/entry/a-mathematical-artwork-fo_b_9450174.html}{here}.
+}
 \examples{
 pi1()
 }

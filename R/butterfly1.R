@@ -1,6 +1,11 @@
 #' Generate butterfly1 data
 #'
 #' Generates data for plotting a butterfly and stores it in a data frame with (x, y) coordinates and radius r
+#' 
+#' The equations were discovered by the mathematical artist \href{https://mathematics.culturalspot.org/home}{Hamid Naderi Yeganeh}. \cr
+#' 
+#' Hamid's equations can be found \href{https://www.huffingtonpost.com/entry/using-mathematical-formul_b_9313484.html}{here}.
+#' 
 #' @param n The number of points to generate
 #' @keywords butterfly
 #' @export
