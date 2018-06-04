@@ -103,7 +103,7 @@ ggsave("lissajous001.png", p, width = 20, height = 20, units = "cm", dpi = 300)
 
 ### Svensson attractor
 
-The Rcpp implementations for the attractor functions in this package are from the blog post \href{https://fronkonstin.com/2017/11/07/drawing-10-million-points-with-ggplot-clifford-attractors/}{Drawing 10 Million Points With ggplot} by Antonio Sanchez Chinchon.
+The Rcpp implementations for the attractor functions in this package are from the blog post [Drawing 10 Million Points With ggplot](https://fronkonstin.com/2017/11/07/drawing-10-million-points-with-ggplot-clifford-attractors/) by Antonio Sanchez Chinchon.
 
 ```R
 df <- svensson_attractor(a=1.4, b=1.4, c=1.4, d=1.4, x0=0.1, y0=0.1, n=10000000)
