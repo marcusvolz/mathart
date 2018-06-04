@@ -127,7 +127,7 @@ ggsave("svensson001.png", p, width = 40, height = 40, units = "cm")
 
 ### Fractal ferns
 
-Refer to the [Wikipedia article](https://en.wikipedia.org/wiki/Barnsley_fern) for details about harmonographs.
+Refer to the [Wikipedia article](https://en.wikipedia.org/wiki/Barnsley_fern) for details about fractal ferns.
 
 ```R
 n <- 250000
