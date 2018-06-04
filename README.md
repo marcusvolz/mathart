@@ -27,6 +27,8 @@ library(tidyverse)
 
 ### Create mollusc shells
 
+The shell model is described in the paper "Models for mollusc shell shape" by M.B. Cortie (1989).
+
 ```R
 df <- mollusc()
 df1 <- df %>% mutate(id = 1)
@@ -49,6 +51,8 @@ ggsave("mollusc01.png", width = 20, height = 20, units = "cm")
 ![plants](https://github.com/marcusvolz/mathart/blob/master/plots/mollusc01.png "Mollusc shells")
 
 ### Create harmonographs
+
+Refer to the [Wikipedia article](https://en.wikipedia.org/wiki/Harmonograph) for details about harmonographs.
 
 ```R
 df1 <- harmonograph(A1 = 1, A2 = 1, A3 = 1, A4 = 1,
@@ -85,6 +89,8 @@ ggsave("harmonograph01.png", p, width = 20, height = 20, units = "cm")
 ![plants](https://github.com/marcusvolz/mathart/blob/master/plots/harmonograph01.png "Harmonograph")
 ### Create Lissajous curves
 
+Refer to the [Wikipedia article](https://en.wikipedia.org/wiki/Lissajous_curve) for details about Lissajous curves.
+
 ```R
 set.seed(1)
 
@@ -120,6 +126,8 @@ ggsave("svensson001.png", p, width = 40, height = 40, units = "cm")
 ![svensson](https://github.com/marcusvolz/mathart/blob/master/plots/svensson001.png "Svensson")
 
 ### Fractal ferns
+
+Refer to the [Wikipedia article](https://en.wikipedia.org/wiki/Barnsley_fern) for details about harmonographs.
 
 ```R
 n <- 250000
