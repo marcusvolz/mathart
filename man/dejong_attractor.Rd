@@ -15,7 +15,7 @@ dejong_attractor(a = 0.4, b = 60, c = 10, d = 1.6, x0 = 0.1,
 \item{n}{The number of points to generate}
 }
 \description{
-Generates data for plotting a De Jong attractor and stores it in a data frame
+Generates data for plotting a De Jong attractor and stores it in a data frame. The Rcpp implementation is from the blog post \href{https://fronkonstin.com/2017/11/07/drawing-10-million-points-with-ggplot-clifford-attractors/}{Drawing 10 Million Points With ggplot} by Antonio Sanchez Chinchon.
 }
 \examples{
 dejong_attractor()

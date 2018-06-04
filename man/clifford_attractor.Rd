@@ -12,7 +12,7 @@ clifford_attractor(a = 1.5, b = -1.8, c = 1.6, d = 2, n = 1e+07)
 \item{n}{The number of points to generate}
 }
 \description{
-Generates data for plotting a Clifford attractor and stores it in a data frame
+Generates data for plotting a Clifford attractor and stores it in a data frame. The Rcpp implementation is from the blog post \href{https://fronkonstin.com/2017/11/07/drawing-10-million-points-with-ggplot-clifford-attractors/}{Drawing 10 Million Points With ggplot} by Antonio Sanchez Chinchon.
 }
 \examples{
 clifford_attractor()

@@ -14,7 +14,7 @@ henon_attractor(a = 1.027, b = 0.3, x0 = 0.1, x1 = 0.1, n = 10000)
 \item{n}{Number of points to generate}
 }
 \description{
-Generates data for plotting a Henon attractor and stores it in a data frame
+Generates data for plotting a Henon attractor and stores it in a data frame. The Rcpp implementation is from the blog post \href{https://fronkonstin.com/2017/11/07/drawing-10-million-points-with-ggplot-clifford-attractors/}{Drawing 10 Million Points With ggplot} by Antonio Sanchez Chinchon.
 }
 \examples{
 henon_attractor()

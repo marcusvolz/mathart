@@ -1,6 +1,7 @@
 #' Svensson attractor
 #'
-#' Generates data for plotting a Svensson attractor and stores it in a data frame
+#' Generates data for plotting a Svensson attractor and stores it in a data frame. The Rcpp implementation is from the blog post \href{https://fronkonstin.com/2017/11/07/drawing-10-million-points-with-ggplot-clifford-attractors/}{Drawing 10 Million Points With ggplot} by Antonio Sanchez Chinchon.
+#' 
 #' @param a,b,c,d Parameters
 #' @param x0,y0 Initial point coordinates
 #' @param n Number of points to generate

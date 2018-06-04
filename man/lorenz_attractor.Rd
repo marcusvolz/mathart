@@ -17,7 +17,7 @@ lorenz_attractor(a = 2, b = 0.7, c = 26, x0 = -1, y0 = 1, z0 = -1,
 \item{n}{Number of points to generate}
 }
 \description{
-Generates data for plotting a Lorenz attractor and stores it in a data frame
+Generates data for plotting a Lorenz attractor and stores it in a data frame. The Rcpp implementation is from the blog post \href{https://fronkonstin.com/2017/11/07/drawing-10-million-points-with-ggplot-clifford-attractors/}{Drawing 10 Million Points With ggplot} by Antonio Sanchez Chinchon.
 }
 \examples{
 lorenz_attractor()

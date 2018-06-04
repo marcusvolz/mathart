@@ -1,7 +1,9 @@
 Package: mathart
 Title: Create mathematical art with R
 Version: 0.0.0.9000
-Authors@R: person("Marcus", "Volz", email = "marcus.volz@outlook.com", role = c("aut", "cre"))
+Authors@R: c(
+    person("Marcus", "Volz", email = "marcus.volz@outlook.com", role = c("aut", "cre")),
+    person("Antonio", "Chinchon", email = "aschinchon@gmail.com", role = "ctb"))
 Description: Create mathematical art with R
 Suggests: R (>= 3.4.3)
 Imports: 
