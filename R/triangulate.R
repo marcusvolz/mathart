@@ -1,6 +1,6 @@
 #' Create a triangulation for a given set of points
 #'
-#' Creates a triangulation for a given set of points
+#' Creates a triangulation for a given set of points (wrapper for deldir)
 #' @param points A data frame with point x and y coordinates
 #' @return A data frame with segment x, y, xend and yend coorindates
 #' @details A simple wrapper for deldir::deldir()

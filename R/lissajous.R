@@ -1,6 +1,6 @@
 #' Generate Lissajous data
 #'
-#' Generates data for plotting Lissajous curves and stores it in a data frame with (x, y) coordinates
+#' Generates data for plotting Lissajous curves and stores it in a data frame with (x, y) coordinates. Refer to the \href{https://en.wikipedia.org/wiki/Lissajous_curve}{Wikipedia article} for details.
 #' @param n The number of points to generate
 #' @param a <- Parameter
 #' @param b <- Parameter

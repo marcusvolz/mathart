@@ -13,7 +13,7 @@ triangulate(points)
 A data frame with segment x, y, xend and yend coorindates
 }
 \description{
-Creates a triangulation for a given set of points
+Creates a triangulation for a given set of points (wrapper for deldir)
 }
 \details{
 A simple wrapper for deldir::deldir()

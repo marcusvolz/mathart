@@ -1,6 +1,6 @@
 #' Generate harmonograph data
 #'
-#' Generates data for plotting a harmonograph and stores it in a data frame with (x, y) coordinates
+#' Generates data for plotting a harmonograph and stores it in a data frame with (x, y) coordinates. Refer to the \href{https://en.wikipedia.org/wiki/Harmonograph}{Wikipedia article} for details.
 #' @param n The number of points to generate
 #' @param A1 A parameter
 #' @param A2 A parameter

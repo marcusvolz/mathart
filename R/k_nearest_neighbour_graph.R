@@ -1,6 +1,6 @@
 #' k-nearest neighbour graph
 #'
-#' Computes a k-nearest neighbour graph for a given set of points
+#' Computes a k-nearest neighbour graph for a given set of points. Refer to the \href{https://en.wikipedia.org/wiki/Nearest_neighbor_graph}{Wikipedia article} for details.
 #' @param points A data frame with x, y coordinates for the points
 #' @param k Number of neighbours
 #' @keywords nearest neightbour graph

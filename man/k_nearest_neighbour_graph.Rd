@@ -12,7 +12,7 @@ k_nearest_neighbour_graph(points, k = 8)
 \item{k}{Number of neighbours}
 }
 \description{
-Computes a k-nearest neighbour graph for a given set of points
+Computes a k-nearest neighbour graph for a given set of points. Refer to the \href{https://en.wikipedia.org/wiki/Nearest_neighbor_graph}{Wikipedia article} for details.
 }
 \examples{
 k_nearest_neighbour_graph()

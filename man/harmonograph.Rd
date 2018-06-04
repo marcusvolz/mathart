@@ -44,7 +44,7 @@ harmonograph(n = 1e+06, A1 = 1, A2 = 1, A3 = 1, A4 = 1, d1 = 0.039,
 \item{p4}{A parameter}
 }
 \description{
-Generates data for plotting a harmonograph and stores it in a data frame with (x, y) coordinates
+Generates data for plotting a harmonograph and stores it in a data frame with (x, y) coordinates. Refer to the \href{https://en.wikipedia.org/wiki/Harmonograph}{Wikipedia article} for details.
 }
 \examples{
 harmonograph()

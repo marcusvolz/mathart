@@ -1,6 +1,6 @@
 #' Generate fractal fern data
 #'
-#' Generates data for plotting a fractal fern and stores it in a data frame with (x, y) coordinates
+#' Generates data for plotting a fractal fern and stores it in a data frame with (x, y) coordinates. Refer to the \href{https://en.wikipedia.org/wiki/Barnsley_fern}{Wikipedia article} for details.
 #' @param n The number of points to generate
 #' @param a Coefficient vector of length 4
 #' @param b Coefficient vector of length 4

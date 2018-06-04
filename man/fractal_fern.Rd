@@ -27,7 +27,7 @@ fractal_fern(n = 10000, a = c(0, 0.85, 0.2, -0.15), b = c(0, 0.04, -0.26,
 \item{c}{Coefficient vector of length 4}
 }
 \description{
-Generates data for plotting a fractal fern and stores it in a data frame with (x, y) coordinates
+Generates data for plotting a fractal fern and stores it in a data frame with (x, y) coordinates. Refer to the \href{https://en.wikipedia.org/wiki/Barnsley_fern}{Wikipedia article} for details.
 }
 \examples{
 fractal_fern()

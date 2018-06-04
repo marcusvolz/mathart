@@ -22,7 +22,7 @@ lissajous(a = 1, b = 1, A = 1, B = 1, d = 200, delta = 0.01 * pi)
 \item{n}{The number of points to generate}
 }
 \description{
-Generates data for plotting Lissajous curves and stores it in a data frame with (x, y) coordinates
+Generates data for plotting Lissajous curves and stores it in a data frame with (x, y) coordinates. Refer to the \href{https://en.wikipedia.org/wiki/Lissajous_curve}{Wikipedia article} for details.
 }
 \examples{
 lissajous()
