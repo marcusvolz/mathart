@@ -168,7 +168,7 @@ p <- ggplot() +
 ggsave("lorenz_attractor.png", p, width = 20, height = 20, units = "cm")
 ```
 
-![lorenz](https://github.com/marcusvolz/mathart/blob/master/plots/svensson001.png "Lorenz")
+![lorenz](https://github.com/marcusvolz/mathart/blob/master/plots/lorenz_attractor.png "Lorenz")
 
 ### Fractal ferns
 
