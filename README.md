@@ -170,6 +170,29 @@ ggsave("lorenz_attractor.png", p, width = 20, height = 20, units = "cm")
 
 ![lorenz](https://github.com/marcusvolz/mathart/blob/master/plots/lorenz_attractor.png "Lorenz")
 
+### Rapidly exploring random tree
+
+Refer to the [Wikipedia article](https://en.wikipedia.org/wiki/Rapidly-exploring_random_tree) for details about rapidly exploring random trees.
+
+```R
+# Generate rrt edges
+set.seed(1)
+df <- rapidly_exploring_random_tree() %>% mutate(id = 1:nrow(.))
+
+# Create plot
+p <- ggplot() +
+  geom_segment(aes(x, y, xend = xend, yend = yend, size = -id, alpha = -id), df, lineend = "round") +
+  coord_equal() +
+  scale_size_continuous(range = c(0.1, 0.75)) +
+  scale_alpha_continuous(range = c(0.1, 1)) +
+  theme_blankcanvas(margin_cm = 0)
+
+# Save plot
+ggsave("rapidly_exploring_random_tree.png", p, width = 20, height = 20, units = "cm")
+```
+
+![rrt](https://github.com/marcusvolz/mathart/blob/master/plots/rapidly_exploring_random_tree.png "rrt")
+
 ### Fractal ferns
 
 Refer to the [Wikipedia article](https://en.wikipedia.org/wiki/Barnsley_fern) for details about fractal ferns.
