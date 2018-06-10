@@ -152,23 +152,23 @@ ggsave("rose_curves.png", p, width = 20, height = 20, units = "cm")
 
 ![rose_curves](https://github.com/marcusvolz/mathart/blob/master/plots/rose_curves.png "Rose-curves")
 
-### Svensson attractor
+### Lorenz attractor
 
 The Rcpp implementations for the attractor functions in this package are from the blog post [Drawing 10 Million Points With ggplot](https://fronkonstin.com/2017/11/07/drawing-10-million-points-with-ggplot-clifford-attractors/) by Antonio Sanchez Chinchon.
 
 ```R
-df <- svensson_attractor(a=1.4, b=1.4, c=1.4, d=1.4, x0=0.1, y0=0.1, n=10000000)
+df <- lorenz_attractor(a=20, b=8/3, c=28, n=1000000)
 
 p <- ggplot() +
-  geom_point(aes(x, y), df, alpha = 0.03, size = 0.03) +
+  geom_path(aes(x, z), df, alpha = 0.15, size = 0.03) +
   coord_equal() +
+  xlim(-25, 25) + ylim(2.5, 52.5) +
   theme_blankcanvas(margin_cm = 0)
 
-ggsave("svensson001.png", p, width = 40, height = 40, units = "cm")
-
+ggsave("lorenz_attractor.png", p, width = 20, height = 20, units = "cm")
 ```
 
-![svensson](https://github.com/marcusvolz/mathart/blob/master/plots/svensson001.png "Svensson")
+![lorenz](https://github.com/marcusvolz/mathart/blob/master/plots/svensson001.png "Lorenz")
 
 ### Fractal ferns
 
