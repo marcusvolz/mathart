@@ -238,3 +238,22 @@ ggsave("fern01.png", width = 20, height = 20, units = "cm")
 ```
 
 ![ferns](https://github.com/marcusvolz/mathart/blob/master/plots/fern01.png "Ferns")
+### k-d tree
+
+Refer to the [Wikipedia article](https://en.wikipedia.org/wiki/K-d_tree) for details about k-d trees.
+
+```R
+points <- mathart::points
+
+result <- kdtree(points)
+
+p <- ggplot() +
+  geom_segment(aes(x, y, xend = xend, yend = yend), result) +
+  coord_equal() +
+  xlim(0, 10000) + ylim(0, 10000) +
+  theme_blankcanvas(margin_cm = 0)
+
+ggsave("kdtree.png", p10, width = 20, height = 20, units = "in")
+```
+
+![kdtree](https://github.com/marcusvolz/mathart/blob/master/plots/kdtree.png "kdtree")
