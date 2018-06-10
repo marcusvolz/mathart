@@ -107,6 +107,26 @@ ggsave("lissajous001.png", p, width = 20, height = 20, units = "cm", dpi = 300)
 
 ![plants](https://github.com/marcusvolz/mathart/blob/master/plots/lissajous01.png "Lissajous")
 
+### Lissajous curves as k-nearest neighbour graphs
+
+Refer to the [Wikipedia article](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm) for details about k-nearest neighbors graphs.
+
+```R
+set.seed(2)
+df <- lissajous(a = runif(1, 0, 2), b = runif(1, 0, 2), A = runif(1, 0, 2), B = runif(1, 0, 2), d = 200) %>%
+  sample_n(1001) %>%
+  k_nearest_neighbour_graph(40)
+
+p <- ggplot() +
+  geom_segment(aes(x, y, xend = xend, yend = yend), df, size = 0.03) +
+  coord_equal() +
+  theme_blankcanvas(margin_cm = 0)
+
+ggsave("../../mathart/plots/knn_lissajous_002.png", p, width = 25, height = 25, units = "cm")
+```
+
+![lissajous_knn](https://github.com/marcusvolz/mathart/blob/master/plots/knn_lissajous_002.png "Lissajous-knn")
+
 ### Svensson attractor
 
 The Rcpp implementations for the attractor functions in this package are from the blog post [Drawing 10 Million Points With ggplot](https://fronkonstin.com/2017/11/07/drawing-10-million-points-with-ggplot-clifford-attractors/) by Antonio Sanchez Chinchon.
