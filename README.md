@@ -150,7 +150,7 @@ p <- ggplot() +
 ggsave("rose_curves.png", p, width = 20, height = 20, units = "cm")
 ```
 
-![lissajous_knn](https://github.com/marcusvolz/mathart/blob/master/plots/knn_lissajous_002.png "Lissajous-knn")
+![rose_curves](https://github.com/marcusvolz/mathart/blob/master/plots/rose_curves.png "Rose-curves")
 
 ### Svensson attractor
 
