@@ -253,7 +253,7 @@ p <- ggplot() +
   xlim(0, 10000) + ylim(0, 10000) +
   theme_blankcanvas(margin_cm = 0)
 
-ggsave("kdtree.png", p10, width = 20, height = 20, units = "in")
+ggsave("kdtree.png", p, width = 20, height = 20, units = "in")
 ```
 
 ![kdtree](https://github.com/marcusvolz/mathart/blob/master/plots/kdtree.png "kdtree")
