@@ -122,7 +122,32 @@ p <- ggplot() +
   coord_equal() +
   theme_blankcanvas(margin_cm = 0)
 
-ggsave("../../mathart/plots/knn_lissajous_002.png", p, width = 25, height = 25, units = "cm")
+ggsave("knn_lissajous_002.png", p, width = 25, height = 25, units = "cm")
+```
+
+![lissajous_knn](https://github.com/marcusvolz/mathart/blob/master/plots/knn_lissajous_002.png "Lissajous-knn")
+
+### Rose curves
+
+Refer to the [Wikipedia article](https://en.wikipedia.org/wiki/Rose_(mathematics)) for details about rose curves.
+
+```R
+df <- data.frame(x = numeric(0), y = numeric(0), n = integer(0), d = integer(0))
+
+for(n in 1:10) {
+  for(d in 1:10) {
+    result <- rose_curve(n, d) %>% mutate(n = n, d = d)
+    df <- rbind(df, result)
+  }
+}
+
+p <- ggplot() +
+  geom_path(aes(x, y), df, size = 0.35, lineend = "round") +
+  facet_grid(d ~ n) +
+  coord_equal() +
+  theme_blankcanvas(margin_cm = 1)
+
+ggsave("rose_curves.png", p, width = 20, height = 20, units = "cm")
 ```
 
 ![lissajous_knn](https://github.com/marcusvolz/mathart/blob/master/plots/knn_lissajous_002.png "Lissajous-knn")
