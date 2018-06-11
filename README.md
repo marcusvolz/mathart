@@ -260,7 +260,7 @@ ggsave("kdtree.png", p, width = 20, height = 20, units = "in")
 
 ### Weiszfeld convergence
 
-This plot shows iterations of Weiszfeld's algorithm, initialised from 10,000 locations, for finding the geometric median of a given set of points. Refer to the [Wikipedia article](https://en.wikipedia.org/wiki/Geometric_median) for details about the geometric median and Weiszfeld's algorithm.
+This plot shows iterations of Weiszfeld's algorithm for finding the geometric median of a given set of points. The algorithm is initialised from 10,000 locations. Refer to the [Wikipedia article](https://en.wikipedia.org/wiki/Geometric_median) for details about the geometric median and Weiszfeld's algorithm.
 
 ```R
 set.seed(1)
