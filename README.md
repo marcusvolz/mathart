@@ -45,7 +45,7 @@ p <- ggplot() +
   facet_wrap(~id, nrow = 2, scales = "free") +
   theme_blankcanvas(margin_cm = 0.5)
 
-ggsave("mollusc01.png", width = 20, height = 20, units = "cm")
+ggsave("mollusc01.png", width = 80, height = 80, units = "cm")
 ```
 
 ![plants](https://github.com/marcusvolz/mathart/blob/master/plots/mollusc01.png "Mollusc shells")

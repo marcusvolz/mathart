@@ -4,27 +4,29 @@
 \alias{mollusc}
 \title{Generate mollusc data}
 \usage{
-mollusc(n = 1000, alpha = 80, beta = 40, phi = 55, mu = 10,
-  Omega = 30, s_min = -270, s_max = 62, A = 25, a = 12, b = 16,
-  P = 2, W_1 = 1, W_2 = 1, N = 1, L = 0, D = 1, theta_start = 0,
-  theta_end = 10 * pi)
+mollusc(n_s = 1000, n_t = 4000, alpha = 80, beta = 40, phi = 55,
+  mu = 30, Omega = 10, s_min = -270, s_max = 62, A = 25, a = 12,
+  b = 16, P = 2, W_1 = 1, W_2 = 1, N = 0, L = 0, D = 1,
+  theta_start = 0, theta_end = 10 * pi)
 }
 \arguments{
-\item{n}{Number of points to generate}
+\item{n_s}{Number of points to generate with respect to s}
 
-\item{alpha}{Equiangular angle of spiral}
+\item{n_t}{Number of points to generate with respect to theta}
 
-\item{beta}{Angle between z-axis and line from aperture local origin to xyz origin}
+\item{alpha}{Equiangular angle of spiral (degrees)}
 
-\item{phi}{Tilt of ellipse major axis from horizontal plane}
+\item{beta}{Angle between z-axis and line from aperture local origin to xyz origin (degrees)}
 
-\item{mu}{Amount of "leaning over" of aperture}
+\item{phi}{Tilt of ellipse major axis from horizontal plane (degrees)}
 
-\item{Omega}{Amount of azimuthal rotation of aperture}
+\item{mu}{Amount of "leaning over" of aperture (degrees)}
 
-\item{s_min}{Angle at which aperture-generating curve begins}
+\item{Omega}{Amount of azimuthal rotation of aperture (degrees)}
 
-\item{s_max}{Angle at which aperture-generating curve ends}
+\item{s_min}{Angle at which aperture-generating curve begins (degrees)}
+
+\item{s_max}{Angle at which aperture-generating curve ends (degrees)}
 
 \item{A}{Distance from main origin to local origin of aperture at theta=0}
 
@@ -32,11 +34,11 @@ mollusc(n = 1000, alpha = 80, beta = 40, phi = 55, mu = 10,
 
 \item{b}{Minor radius of ellipse at theta=0}
 
-\item{P}{Position of nodule in terms of the angle, s}
+\item{P}{Position of nodule in terms of the angle, s (degrees)}
 
-\item{W_1}{Width of nodule in s-direction}
+\item{W_1}{Width of nodule in s-direction (degrees)}
 
-\item{W_2}{Width of nodule in theta-direction}
+\item{W_2}{Width of nodule in theta-direction (degrees)}
 
 \item{N}{Number of nodules per whorl}
 
