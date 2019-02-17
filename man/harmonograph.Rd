@@ -4,9 +4,9 @@
 \alias{harmonograph}
 \title{Generate harmonograph data}
 \usage{
-harmonograph(n = 1e+06, A1 = 1, A2 = 1, A3 = 1, A4 = 1, d1 = 0.039,
-  d2 = 0.006, d3 = 0, d4 = 0.0045, f1 = 10, f2 = 3, f3 = 1,
-  f4 = 2, p1 = 0, p2 = 0, p3 = pi/2, p4 = 0)
+harmonograph(n = 1e+06, A1 = 1, A2 = 1, A3 = 1, A4 = 1,
+  d1 = 0.039, d2 = 0.006, d3 = 0, d4 = 0.0045, f1 = 10, f2 = 3,
+  f3 = 1, f4 = 2, p1 = 0, p2 = 0, p3 = pi/2, p4 = 0)
 }
 \arguments{
 \item{n}{The number of points to generate}

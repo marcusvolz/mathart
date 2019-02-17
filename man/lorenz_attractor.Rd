@@ -4,8 +4,8 @@
 \alias{lorenz_attractor}
 \title{Lorenz attractor}
 \usage{
-lorenz_attractor(a = 2, b = 0.7, c = 26, x0 = -1, y0 = 1, z0 = -1,
-  dt = 0.01, n = 10000)
+lorenz_attractor(a = 2, b = 0.7, c = 26, x0 = -1, y0 = 1,
+  z0 = -1, dt = 0.01, n = 10000)
 }
 \arguments{
 \item{a, b, c}{Parameters}
