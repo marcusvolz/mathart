@@ -4,8 +4,7 @@
 \alias{henon_attractor}
 \title{Henon attractor}
 \usage{
-henon_attractor(a = 1.027, b = 0.3, x0 = 0.1, x1 = 0.1,
-  n = 10000)
+henon_attractor(a = 1.027, b = 0.3, x0 = 0.1, x1 = 0.1, n = 10000)
 }
 \arguments{
 \item{a, b}{Parameters}

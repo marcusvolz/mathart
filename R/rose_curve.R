@@ -4,14 +4,15 @@
 #' @param n Curve parameter
 #' @param d Curve parameter
 #' @param delta Timestep
+#' @param N Determines the extent of the curve
 #' @keywords rose curve
 #' @export
 #' @examples
 #' rose_curve()
 
-rose_curve <- function(n, d, delta = pi/180) {
-  k <- n / d
-  data.frame(theta = seq(0, 32*pi, delta)) %>%
-    mutate(x = cos(k*theta)*cos(theta),
-           y = cos(k*theta)*sin(theta))
+rose_curve <- function(n, d, delta = pi/180, N = 32) {
+  data.frame(theta = seq(0, N*pi, delta)) %>%
+    mutate(x = cos(n/d*theta)*cos(theta),
+           y = cos(n/d*theta)*sin(theta)) %>%
+    select(x, y)
 }

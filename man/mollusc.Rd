@@ -4,10 +4,28 @@
 \alias{mollusc}
 \title{Generate mollusc data}
 \usage{
-mollusc(n_s = 1000, n_t = 4000, alpha = 80, beta = 40, phi = 55,
-  mu = 30, Omega = 10, s_min = -270, s_max = 62, A = 25,
-  a = 12, b = 16, P = 2, W_1 = 1, W_2 = 1, N = 0, L = 0,
-  D = 1, theta_start = 0, theta_end = 10 * pi)
+mollusc(
+  n_s = 1000,
+  n_t = 4000,
+  alpha = 80,
+  beta = 40,
+  phi = 55,
+  mu = 30,
+  Omega = 10,
+  s_min = -270,
+  s_max = 62,
+  A = 25,
+  a = 12,
+  b = 16,
+  P = 2,
+  W_1 = 1,
+  W_2 = 1,
+  N = 0,
+  L = 0,
+  D = 1,
+  theta_start = 0,
+  theta_end = 10 * pi
+)
 }
 \arguments{
 \item{n_s}{Number of points to generate with respect to s}

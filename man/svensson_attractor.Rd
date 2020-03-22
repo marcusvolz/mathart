@@ -4,8 +4,15 @@
 \alias{svensson_attractor}
 \title{Svensson attractor}
 \usage{
-svensson_attractor(a = 1.4, b = 1.6, c = -1.4, d = 1.5, x0 = 0.1,
-  y0 = 0.1, n = 1e+06)
+svensson_attractor(
+  a = 1.4,
+  b = 1.6,
+  c = -1.4,
+  d = 1.5,
+  x0 = 0.1,
+  y0 = 0.1,
+  n = 1e+06
+)
 }
 \arguments{
 \item{a, b, c, d}{Parameters}

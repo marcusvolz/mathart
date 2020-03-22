@@ -4,8 +4,7 @@
 \alias{lissajous}
 \title{Generate Lissajous data}
 \usage{
-lissajous(a = 1, b = 1, A = 1, B = 1, d = 200, delta = 0.01 *
-  pi)
+lissajous(a = 1, b = 1, A = 1, B = 1, d = 200, delta = 0.01 * pi)
 }
 \arguments{
 \item{a}{<- Parameter}

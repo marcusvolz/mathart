@@ -4,8 +4,15 @@
 \alias{dejong_attractor}
 \title{De Jong attractor}
 \usage{
-dejong_attractor(a = 0.4, b = 60, c = 10, d = 1.6, x0 = 0.1,
-  y0 = 0.1, n = 1e+07)
+dejong_attractor(
+  a = 0.4,
+  b = 60,
+  c = 10,
+  d = 1.6,
+  x0 = 0.1,
+  y0 = 0.1,
+  n = 1e+07
+)
 }
 \arguments{
 \item{a, b}{Parameters}
