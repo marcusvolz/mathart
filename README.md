@@ -30,6 +30,8 @@ library(tidyverse)
 
 The shell model is described in the paper "Models for mollusc shell shape" by M.B. Cortie (1989).
 
+See also the following [Gist](https://gist.github.com/marcusvolz/6ff4ac6434db221c25c0287a604b37f0).
+
 ```R
 df <- mollusc()
 df1 <- df %>% mutate(id = 1)
