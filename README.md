@@ -13,14 +13,12 @@ Note: Previously this package contained functions for generating data from param
 ```R
 install.packages(c("devtools", "mapproj", "tidyverse", "ggforce", "Rcpp"))
 devtools::install_github("marcusvolz/mathart")
-devtools::install_github("marcusvolz/ggart")
 ```
 
 ### Load the libraries
 
 ```R
 library(mathart)
-library(ggart)
 library(ggforce)
 library(Rcpp)
 library(tidyverse)
