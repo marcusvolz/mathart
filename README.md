@@ -4,7 +4,7 @@ Create mathematical art with R
 
 This package provides functions and data for creating mathematical art.
 
-Note: Previously this package contained functions for generating data from parametric equations discovered by the mathematical artist [Hamid Naderi Yeganeh](https://mathematics.culturalspot.org/home). The equations, which are publically available, generate data that, when plotted without further processing, closely resemble Hamid's artworks. To ensure that I do not inadvertently receive credit for Hamid's work and out of respect for the artist I have removed any functions and plots derived from his equations, and apologise to Hamid for any confusion this may have caused.
+Note: Previously this package contained functions for generating data from parametric equations discovered by the mathematical artist [Hamid Naderi Yeganeh](https://en.wikipedia.org/wiki/Hamid_Naderi_Yeganeh). The equations, which are publically available, generate data that, when plotted without further processing, closely resemble Hamid's artworks. To ensure that I do not inadvertently receive credit for Hamid's work and out of respect for the artist I have removed any functions and plots derived from his equations, and apologise to Hamid for any confusion this may have caused.
 
 ## How to use
 
